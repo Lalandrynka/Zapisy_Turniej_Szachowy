@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pl"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="szachy" content="turniej, zapisy, szachy">
+    <title>Document</title> 
+    <link rel="stylesheet" href="{{ url_for('static', filename='zapisy_na_turniej.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Zapisy na turniej szachowy</h1>
+    </header>
+    <aside>
+        <a href="#">link1</a><br>
+        <a href="#">link2</a><br>
+        <a href="#">link3</a><br>
+        <a href="#">link4</a><br>
+    </aside>
+    <section>
+        <table border="1">
+            <p id="ptable">Grafik Turniejów</p>
+            <legend id="tleg">Terminy turniejów i lokalizacje</legend>
+            <tr><th>Wałbrzych</th><th>Wrocław</th><th>Legnica</th><th>Kłodzko</th></tr>
+            <tr><td>16.03.2026</td><td>19.03.2026</td><td>26.03.2026</td><td>23.03.2026</td></tr>
+            <tr><td>30.03.2026</td><td>10.04.2026</td><td>13.04.2026</td><td>2.05.2026</td></tr>
+            <tr><td>7.04.2026</td><td>29.04.2026</td><td>30.04.2026</td><td>3.06.2026</td></tr>
+            <tr><td>19.06.2026</td><td>15.05.2026</td><td>10.05.2026</td><td>21.06.2026</td></tr>
+        </table>
+    </section>
+    <main>
+    <form action="/add" method="post">
+        <fieldset>
+            <legend>Formularz do zapisania się na turniej</legend>
+
+            <label for="name">Podaj Imię</label><br>
+            <input type="text" id="name" name="imie" placeholder="Imię" required>
+            <br><br>
+
+            <label for="nazwisko">Podaj Nazwisko</label><br>
+            <input type="text" id="surname" name="nazwisko" placeholder="Nazwisko" required>
+            <br><br>
+
+            <label for="email">Podaj E-mail</label><br>
+            <input type="email" id="e-mail" name="email" placeholder="Email" required>
+            <br><br>
+
+            <label for="numer">Podaj numer telefonu</label><br>
+            <input type="tel" id="number" name="numer" placeholder="Numer telefonu" required>
+            <br><br>
+
+            <label for="wiek">Podaj datę narodzin</label><br>
+            <input type="date" id="age" name="wiek" placeholder="Wiek" required>
+            <br><br>
+
+            <p>Podaj kategorię szachową</p>
+            <input type="radio" id="chess_category1" name="kategoria" value="brak">
+            <label for="chess_category1">brak</label>
+
+            <input type="radio" id="chess_category2" name="kategoria" value="V">
+            <label for="chess_category2">V</label>
+
+            <input type="radio" id="chess_category3" name="kategoria" value="IV">
+            <label for="chess_category3">IV</label>
+
+            <input type="radio" id="chess_category4" name="kategoria" value="III">
+            <label for="chess_category4">III</label>
+
+            <input type="radio" id="chess_category5" name="kategoria" value="II">
+            <label for="chess_category5">II</label>
+
+            <input type="radio" id="chess_category6" name="kategoria" value="I">
+            <label for="chess_category6">I</label>
+            <br><br>
+
+            <label for="ranking">Podaj ranking szachowy</label><br>
+            <input type="number" id="chess_rating" name="ranking" placeholder="Ranking" required>
+            <br><br>
+
+            <label for="numer_konta_bankowego">Podaj numer konta bankowego</label><br>
+            <input type="number" id="bank_account" name="numer_konta_bankowego" placeholder="Numer konta bankowego" required>
+            <br><br>
+
+            <button type="submit">Zapisz się</button>
+            <br><br><br>
+        </fieldset>
+    </form>
+</main>
+</body>
+</html>
+<!--Ogarnięcie linków,tabeli i prawa strona (strony)-->

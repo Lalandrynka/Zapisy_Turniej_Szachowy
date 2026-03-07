@@ -1,0 +1,67 @@
+/*Ogólne*/
+body{
+    background-image: url('/static/images/projekt1.jpg');
+}
+header{
+    text-align: center;
+    background-color: rgba(0, 139, 139, 0.75);
+}
+aside{
+    width: 200px;
+    height: 600px;
+    text-align: center;
+    text-decoration: none;
+    background-color:rgb(30, 150, 160);
+}
+main,aside,section{
+    float: left;
+}
+main{
+    width: 600px;
+    height: 600px;
+    background-color: rgba(127, 255, 212, 0.9);
+}
+section{
+    width: 400px;
+    height: 600px;
+    background-image: url('/static/images/projekt2vr.2.png');
+    color:black;
+}
+/*Tabela*/
+#ptable{
+    font-size: xx-large;
+    font-weight: bolder;
+    color: yellow;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+#tleg{
+    color: blue;
+}
+table{
+    border: solid 2px black;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.8);
+}
+th{
+    color: black;
+}
+td{
+    color: rgb(225, 225, 225);
+}
+td,th{
+    width: 30px;
+    height: 50px;
+}
+/*Formularz*/
+form{
+    text-align: center;
+}
+fieldset{
+    border-radius:solid 2px black;
+}
+input[type="text"],input[type="email"],input[type="tel"],input[type="date"],input[type="number"]{
+    width: 100%;
+}
+input[type="radio"]{
+    text-align: left !important;
+}
