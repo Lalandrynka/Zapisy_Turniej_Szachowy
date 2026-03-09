@@ -10,8 +10,7 @@ aside{
     width: 200px;
     height: 600px;
     text-align: center;
-    text-decoration: none;
-    background-color:rgb(30, 150, 160);
+    background-color:rgb(30, 150, 160, 0.8);
 }
 main,aside,section{
     float: left;
@@ -26,6 +25,18 @@ section{
     height: 600px;
     background-image: url('/static/images/projekt2vr.2.png');
     color:black;
+}
+/*Menu*/
+a{
+    text-decoration: none;
+    color: black;
+}
+.menu{
+    display: block;
+    background-color: rgb(240, 240, 185);
+    width: 194px;
+    height: 40px;
+    border: solid 3px lightgreen;
 }
 /*Tabela*/
 #ptable{
