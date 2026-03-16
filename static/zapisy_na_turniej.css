@@ -39,19 +39,20 @@ a{
     border: solid 3px lightgreen;
 }
 /*Tabela*/
-#ptable{
+.ptable{
     font-size: xx-large;
     font-weight: bolder;
     color: yellow;
     background-color: rgba(0, 0, 0, 0.7);
 }
 #tleg{
-    color: blue;
+    color: rgb(34, 139, 173);
 }
 table{
     border: solid 2px black;
     text-align: center;
     background-color: rgba(128, 128, 128, 0.8);
+    width: 100%;
 }
 th{
     color: black;
@@ -60,7 +61,6 @@ td{
     color: rgb(225, 225, 225);
 }
 td,th{
-    width: 30px;
     height: 50px;
 }
 /*Formularz*/
