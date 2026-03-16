@@ -85,6 +85,21 @@
         </fieldset>
     </form>
 </main>
+<section>
+    <table border="1">
+        <p>Zapisani zawodnicy</p>
+        <tr><th>imie</th><th>nazwisko</th><th>data narodzin</th><th>kategoria</th><th>ranking</th></tr>
+        {% for user in users %}
+        <tr>
+            <td>{{ user[0] }}</td>
+            <td>{{ user[1] }}</td>
+            <td>{{ user[2] }}</td>
+            <td>{{ user[3] }}</td>
+            <td>{{ user[4] }}</td>
+        </tr>
+        {% endfor %}  
+    </table>
+</section>
 </body>
 </html>
-<!--Ogarnięcie linków,tabeli i prawa strona (strony)-->
+<!--Dokończenie menu,tabeli i prawa strona (strony)-->

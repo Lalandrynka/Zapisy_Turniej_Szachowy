@@ -16,7 +16,7 @@ cursor = db.cursor()
 # strona główna - wyświetlanie użytkowników
 @app.route("/")
 def index():
-    cursor.execute("SELECT * FROM zapisy")
+    cursor.execute("SELECT imie, nazwisko, wiek, kategoria, ranking FROM zapisy")
     users = cursor.fetchall()
     return render_template("zapisy_na_turniej.html", users=users)
 
